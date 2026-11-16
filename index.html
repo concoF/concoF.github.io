@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>concofate</title>
+<meta name="description" content="concofate · 个人站点">
+<meta property="og:title" content="concofate">
+<meta property="og:description" content="concofate · 个人站点">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230a0a0f'/%3E%3Cpath d='M20 11a6 6 0 1 0 0 10' stroke='%23e879c7' stroke-width='2.6' fill='none' stroke-linecap='round'/%3E%3C/svg%3E">
+<style>
+  *,*::before,*::after{box-sizing:border-box}
+  html,body{height:100%;margin:0}
+  body{
+    background:#0a0a0f;
+    color:#e8e6f0;
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif;
+    display:flex;align-items:center;justify-content:center;
+    padding:24px;
+    -webkit-font-smoothing:antialiased;
+    overflow:hidden;
+  }
+  body::before{
+    content:"";position:fixed;inset:0;pointer-events:none;
+    background:
+      radial-gradient(680px 480px at 18% 12%, rgba(232,121,199,.16), transparent 62%),
+      radial-gradient(760px 520px at 82% 88%, rgba(124,92,214,.18), transparent 64%);
+  }
+  main{position:relative;max-width:520px;width:100%}
+  .mark{
+    font-size:clamp(34px,7vw,52px);
+    font-weight:500;letter-spacing:-.035em;line-height:1.05;
+    margin:0 0 18px;
+    background:linear-gradient(96deg,#f2f0fa 8%,#e879c7 52%,#9d8bf0 96%);
+    -webkit-background-clip:text;background-clip:text;color:transparent;
+  }
+  .rule{width:52px;height:1px;background:linear-gradient(90deg,#e879c7,rgba(124,92,214,0));margin:0 0 18px}
+  p{margin:0;color:#a9a6bd;font-size:15px;line-height:1.85}
+  .tag{
+    display:inline-flex;align-items:center;gap:8px;
+    margin-top:32px;padding:7px 13px;
+    border:1px solid rgba(232,121,199,.28);border-radius:999px;
+    font-size:12px;color:#c9c5dd;letter-spacing:.02em;
+  }
+  .dot{width:5px;height:5px;border-radius:50%;background:#56d19a;box-shadow:0 0 8px rgba(86,209,154,.9)}
+  footer{
+    position:fixed;left:0;right:0;bottom:22px;text-align:center;
+    font-size:11.5px;color:#55526a;letter-spacing:.04em;
+  }
+  @media (prefers-reduced-motion:no-preference){
+    main{animation:in .7s cubic-bezier(.22,.68,0,1) both}
+    @keyframes in{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+  }
+</style>
+</head>
+<body>
+<main>
+  <h1 class="mark">concofate</h1>
+  <div class="rule"></div>
+  <p>这里是我的个人站点，正在搭建中。<br>域名与服务器已经就位，内容稍后上线。</p>
+  <div class="tag"><span class="dot"></span>service online</div>
+</main>
+<footer>concofate.loc.cc</footer>
+</body>
+</html>
